@@ -13,7 +13,7 @@ def ind():
     return 'Hello HBNB!'
 
 
-@app.route('/hbnb', strict_slashes=False)
+@moc.route('/hbnb', strict_slashes=False)
 def hbnb():
     """returns HBNB"""
     return 'HBNB'
