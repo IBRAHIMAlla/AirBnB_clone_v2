@@ -7,7 +7,7 @@ from flask import Flask, render_template
 moc = Flask(__name__)
 
 
-@app.route('/', strict_slashes=False)
+@moc.route('/', strict_slashes=False)
 def ind():
     """returns Hello HBNB!"""
     return 'Hello HBNB!'
