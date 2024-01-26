@@ -7,7 +7,7 @@ from flask import Flask, render_template
 moc = Flask(__name__)
 
 
-@moc.route('/', strict_slashes=False)
+@app.route('/', strict_slashes=False)
 def ind():
     """returns Hello HBNB!"""
     return 'Hello HBNB!'
@@ -45,7 +45,7 @@ def temp(n):
 
 
 @moc.route('/number_odd_or_even/<int:n>', strict_slashes=False)
-def number_odd(n):
+def num_evenness(n):
     """display a HTML page only if n is an integer"""
     if n % 2 == 0:
         ev = 'even'
